@@ -25,7 +25,6 @@ services:
     image: nginx
     container_name: nginx
     restart: always
-    network_mode: host
     volumes:
       - ./sites-available:/etc/nginx/conf.d
     ports:
