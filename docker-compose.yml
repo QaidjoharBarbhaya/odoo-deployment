@@ -4,8 +4,6 @@ services:
     image: odoo:13.0
     container_name: odoo
     restart: always
-    ports:
-      - "8069:8069"
     volumes:
       - ./config:/etc/odoo
       - ./extra-addons:/mnt/extra-addons
