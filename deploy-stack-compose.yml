@@ -17,8 +17,6 @@ services:
       - db:/var/lib/postgresql/data
   nginx:
     image: nginx
-    container_name: nginx
-    restart: always
     volumes:
       - ./sites-available:/etc/nginx/conf.d
     ports:
