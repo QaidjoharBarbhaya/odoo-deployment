@@ -1,9 +1,5 @@
-Odoo Installation in local (Behind Nginx Reverse Proxy)
-----------------------------------------------
+## Odoo Installation in production (Behind Nginx Reverse Proxy)
 
-$ git clone https://github.com/QaidjoharBarbhaya/odoo-deployment.git
+$ docker swarm init
 
-$ cd odoo-deployment
-
-$ docker-compose -p odoo up -d
-
+$ docker stack deploy -c deploy-stack-compose.yml odoo
