@@ -1,4 +1,4 @@
-Odoo Installation (Behind Nginx Reverse Proxy)
+Odoo Installation in local (Behind Nginx Reverse Proxy)
 ----------------------------------------------
 
 $ git clone https://github.com/QaidjoharBarbhaya/odoo-deployment.git
