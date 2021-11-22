@@ -10,9 +10,11 @@ services:
     image: postgres:10
     environment:
       - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_PASSWORD_FILE=/run/secrets/psql-pass
       - POSTGRES_USER=odoo
       - PGDATA=/var/lib/postgresql/data/pgdata
+    secrets:
+      - psql-pass
     volumes:
       - db:/var/lib/postgresql/data
   nginx:
@@ -21,6 +23,9 @@ services:
       - ./sites-available:/etc/nginx/conf.d
     ports:
       - "80:80"
+secrets:
+  psql-pass:
+      external: true
 volumes:
   data:
   db:

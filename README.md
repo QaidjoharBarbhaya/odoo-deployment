@@ -8,4 +8,6 @@ $ mkdir extra-addons
 
 $ docker swarm init
 
+$ echo "odoo" | docker secret create psql-pass -
+
 $ docker stack deploy -c deploy-stack-compose.yml odoo
