@@ -2,6 +2,8 @@
 
 $ git clone https://github.com/QaidjoharBarbhaya/odoo-deployment.git
 
+$ cd odoo-deployment
+
 $ mkdir extra-addons
 
 $ docker swarm init
